@@ -1,0 +1,198 @@
+<!-- File: c:\Users\Maksym\Desktop\HTML\MyPortfolio\index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    
+
+    <main>
+        <section class="first-screen" id="first-screen">
+            <div class="container">
+                
+                <div class="menu">
+                    <div class="PinMenu"><a href="">Home</a></div>
+                    <div class="PinMenu"><a href="#About">About</a></div>
+                    <div class="PinMenu"><a href="#Projects">Projects</a></div>
+                    <div class="PinMenu"><a href="">Contact</a></div>
+                </div>
+                    
+                <div class="intro-text">
+                    <h1>Hello, I'm FlashedCelery9</h1>
+                    <h2>Welcome to my Portfolio</h2>
+                </div>
+            </div>
+                
+        </section>
+            <section id="About" class="About">
+                <div class="container">
+                    
+                    <div class="profile">
+                        <div class="avatar">
+                            <img src="images/avatar.jpg" alt="">
+                        </div>
+                        <div class="profile-text">
+                            <h2>About Me</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="flines">
+                        <div class="first-line"></div>
+                        <div class="first-line"></div>
+                    </div>
+
+                </div>
+            </section>
+            <section class="Projects" id="Projects">
+                <div class="container">
+                    
+                    <div class="projects">
+                        <h2>My Projects</h2>
+                        <div class="cards">
+                            <div class="project-1 project-card">
+                                <h3>Rektion sanakirja</h3>
+                                <div class="img">
+                                    <img src="images/phone.png" alt="">
+                                </div>
+                                <p>A project that helps quickly check whether a word belongs to rektio.</p>
+                                <p>These are exception words in the Finnish language.</p>
+                                <p>The dictionary contains over 1,000 words.</p>
+                                <div class="labels">
+                                    <a href="https://maksum2232.github.io/Tarkista_tasta/"  target="_blank">View</a>
+                                    <a href="https://github.com/FlashedCelery9"  target="_blank">GitHub</a>
+                                </div>
+                               
+                            </div>
+                            <div class="project-2 project-card">
+                                <h3>Mini RPG-GAME</h3>
+                                <div class="img">
+                                    <img src="images/magician.png"  alt="">
+                                </div>
+                                <p>This is a mini RPG game created based on basic Python OOP knowledge, using the Tkinter library for a simple graphical interface.</p>
+                                <div class="labels">
+                                    <a href="https://github.com/FlashedCelery9/RPG-GAME" target="_blank">View</a>
+                                    <a href="https://github.com/FlashedCelery9"  target="_blank">GitHub</a>
+                                </div>
+                            </div>
+                            <div class="project-3 project-card">
+                                <h3>Project 3</h3>
+                                <p>Description of project 3.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="skills">
+                <div class="container">
+                    <div class="Skills_header">
+                        <div class="sectionLine"></div>
+                        <h2>My Skills</h2>
+                        <div class="sectionLine"></div>
+                    </div>
+                    
+                    <div class="skills-cards">
+                        <div class="skill-item">
+                            <h3>HTML + CSS</h3>
+                            <div class="skill-img">
+                                <img src="images/html.png" alt="">
+                            </div>
+                            <p>I have basic knowledge of CSS and HTML.</p>
+                            <p>I can work with responsive design.</p>
+                            <p>I can build static websites.</p>
+                        </div>
+                        <div class="skill-item">
+                            <h3>C++</h3>
+                            <div class="skill-img">
+                                <img src="images/c++.png" alt="">
+                            </div>
+                            <p>Familiar with OOP principles in C++.</p>
+                            <p>(classes, objects, inheritance, encapsulation, polymorphism)</p>
+                        </div>
+                        <div class="skill-item">
+                            <h3>С#</h3>
+                            <div class="skill-img">
+                                <img src="images/csharp.png" alt="">
+                            </div>
+                            <p>Understanding of core OOP and SOLID principles in C#.</p>
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+            <section class="contact">
+                <div class="container">
+
+                    <div class="Skills_header">
+                        <div class="sectionLine"></div>
+                        <h2>Contact Me</h2>
+                        <div class="sectionLine"></div>
+                    </div>
+                    
+                    <p>If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
+                    <div class="contact-info">
+                        <form id="contactForm" action="https://docs.google.com/forms/d/e/1FAIpQLSf0X8hmgFf7gwCXGVVjFsHIeRD6SZiJuBF9JufM3tTQcKz5tQ/formResponse" method="post" target="hidden_iframe">
+                            <input type="email" name="entry.524447575" placeholder="Your email" required>
+                            <textarea name="entry.1153293042" placeholder="Message"></textarea>
+                             <button type="submit">Send</button>
+                        </form>
+                        <iframe name="hidden_iframe" style="display:none;"></iframe>
+                        <p id="successMessage" style="display:none; color: green;">Message sent successfully!</p>
+
+                        <script>
+                            const form = document.getElementById('contactForm');
+                            const successMessage = document.getElementById('successMessage');
+
+                            form.addEventListener('submit', () => {
+                            // показати повідомлення після короткої затримки
+                            setTimeout(() => {
+                                successMessage.style.display = 'block';
+                                form.reset(); // ОЧИЩАЄМО форму
+                            }, 500); 
+                            });
+                        </script>
+                </div>
+            </section>
+            <section class="footer">
+                <div class="containter">
+                    
+                    <p>© 2026 FlashedCelery9. All rights reserved.</p>
+                    <p>Unauthorized use, reproduction, or distribution of any content from this website is prohibited.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div class="container"><div id="sakura-container"></div></div>
+    
+      <script>
+  // Генеруємо 50 пелюсток з випадковими позиціями і швидкістю
+  const container = document.getElementById('sakura-container');
+
+  for (let i = 0; i < 50; i++) {
+    const petal = document.createElement('div');
+    petal.classList.add('petal');
+
+    // випадкова горизонтальна позиція
+    petal.style.left = Math.random() * window.innerWidth + 'px';
+
+    // випадковий розмір
+    const size = 5 + Math.random() * 20;
+    petal.style.width = size + 'px';
+    petal.style.height = size + 'px';
+
+    // випадкова швидкість
+    petal.style.animationDuration = (3 + Math.random() * 5) + 's';
+    // випадкова затримка
+    petal.style.animationDelay = Math.random() * 6 + 's';
+
+    container.appendChild(petal);
+  }
+  </script>
+</body>
+</html>

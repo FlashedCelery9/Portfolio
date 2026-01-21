@@ -1,0 +1,328 @@
+/* File: c:\Users\Maksym\Desktop\HTML\MyPortfolio\style.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+    background-color: #fbd07b;
+  background-image: url("../images/paper-noise.svg");
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+}
+.first-screen .container{
+  background: none;
+}
+.menu {
+  z-index: 12;
+  display: flex;
+  
+  
+  justify-content: center;
+  gap: 40px;
+  padding: 20px 0;
+  background-color: #f1d9a88b;
+  border-radius: 0 0 60% 60%;
+} 
+.menu a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+.menu a:hover {
+  color: #007BFF;
+
+}
+.menu:hover {
+  background-color:  #f1d9a8d9;
+}
+.first-screen { /*First Screen Styles*/
+  
+  text-align: center;
+  min-height: 500px;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+
+}
+.intro-text{
+  margin-top: 100px;
+}
+.first-screen h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.first-screen h2 {
+  font-size: 24px;
+}
+.flines{/* Decorative Lines Styles*/
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  margin-top: 20px;
+}
+.first-line{
+  width: 50%;
+  height: 2px;
+  background: #a4404099;
+   background: linear-gradient(
+    to right, 
+    transparent,
+    #9f2121 20%,
+    #9f2121 80%,
+    transparent
+  );
+  border-radius: 999px;
+  
+}
+
+
+
+.profile{ /*Profile Section Styles*/
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.avatar img{
+  width: 200px;
+  z-index: 2;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: #444444 0px 8px 16px;
+  margin-right: 20px;
+}
+.projects { /*Projects Section Styles*/
+  margin: 50px 0;
+
+}
+.projects h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.cards { /* Project Cards Container */
+  display: flex; 
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap; /* Переніс карток які не вмістилися в один рядок на наступний */
+}
+.project-card { /* Individual Project Card */
+  width: 25%;
+  border-radius: 5%;
+  background-color: #e4b04746;
+}
+.project-card:hover {
+  background-color: #fbd07bb1;
+  box-shadow: #444444 0px 8px 16px;
+}
+.project-card p {
+  height: auto;
+  width: 70%;
+  justify-content: left;
+  justify-self: center;
+  margin-bottom: 5px;
+}
+.project-card h3{
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+.projects img{
+  margin: 20px 0 20px 0;
+  width: 40%;
+  height: auto;
+  border-radius: 100%;
+
+}
+.img {
+  display: flex;
+  justify-content: center;
+}
+.projects a {
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10%;
+  font-size: 15px;
+  padding: 10px 15px;
+  background-color: #ff7f50;
+  color: #333;
+  font-weight: bold;
+}
+.labels {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 20px 0;
+  gap: 15px;
+  
+}
+.labels a:hover {
+  background-color: #ff6347;
+  color: #fff;
+  box-shadow: #ff6464 0px 4px 8px;
+}
+.skills h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.Skills_header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.sectionLine{
+  width: 25%;
+  height: 2px;
+  background: #a4404099;
+   background: linear-gradient(
+    to right, 
+    transparent,
+    #9f2121 20%,
+    #9f2121 80%,
+    transparent
+  );
+  border-radius: 999px;
+  align-self: center;
+}
+.skills-cards{
+  display: flex; 
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skill-item{
+  width: 25%;
+  background-color: hsla(87, 42%, 37%, 0.132);
+  border-radius: 5%;
+  
+}
+.skill-item h3{
+  text-align: center;
+  margin: 10px 0 10px 0;
+}
+.skill-item p {
+  justify-content: left;
+  width: 70%;
+  justify-self: center;
+  margin-bottom: 5%;
+}
+.skill-img img{
+  display: flex;
+  justify-self: center;
+  width: 38%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  height: auto;
+}
+.sticky {
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  top: 50%; /* відступ від верху при фіксації */
+}
+.menu_img {
+  width: 45px;
+  display: block;
+  height: 45px;
+}
+.menu_img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+  
+}
+.contact h2{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.contact p{
+  text-align: center;
+  margin-bottom: 30px;
+}
+.contact form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.contact input{
+  padding: 10px;
+  width: 300px;
+  border-radius: 0px;
+  border: none;
+  background-color: #eed7a9;
+}
+.contact textarea{
+  padding: 10px;
+  width: 300px;
+  height: 100px;
+  border-radius: 0px;
+  border: none;
+  background-color: #eed7a9;
+}
+.contact button{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ff7f50;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+.contact button:hover{
+  background-color: #ff6347;
+  box-shadow: #ff6464 0px 4px 8px;
+}
+.footer {
+  background-color: #f1d9a88b;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 30px;
+  border-radius: 60% 60% 0 0;
+}
+  /* Контейнер поверх всього сайту */
+ #sakura-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;      /* обов’язково 100% ширини */
+  height: 100%;     /* і 100% висоти */
+  pointer-events: none;
+  z-index: 9999;
+  overflow: hidden;
+}
+
+  /* Одна пелюстка */
+  .petal {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-image: url('../images/pental.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    opacity: 1.0;
+    animation-name: fall;
+    
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  /* Анімація падіння */
+  @keyframes fall {
+    0% { transform: translateY(50px) rotate(0deg); }
+    100% { transform: translateY(100vh) rotate(360deg); }
+  }
+  
+
+
+
