@@ -20,8 +20,6 @@ body {
 .menu {
   z-index: 12;
   display: flex;
-  
-  
   justify-content: center;
   gap: 40px;
   padding: 20px 0;
@@ -100,6 +98,9 @@ body {
 }
 .projects { /*Projects Section Styles*/
   margin: 50px 0;
+  gap: 20px;
+  display: grid;
+  grid-template-columns:  auto auto auto;
 
 }
 .projects h2 {
@@ -113,19 +114,20 @@ body {
   flex-wrap: wrap; /* Переніс карток які не вмістилися в один рядок на наступний */
 }
 .project-card { /* Individual Project Card */
-  width: 25%;
+  width: 300px;
   border-radius: 5%;
+  gap: 20px;
   background-color: #e4b04746;
+  justify-items: center;
 }
 .project-card:hover {
   background-color: #fbd07bb1;
-  box-shadow: #444444 0px 8px 16px;
+  box-shadow: #444444 8px 16px;
 }
 .project-card p {
   height: auto;
   width: 70%;
   justify-content: left;
-  justify-self: center;
   margin-bottom: 5px;
 }
 .project-card h3{
